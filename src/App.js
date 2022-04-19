@@ -10,6 +10,7 @@ function App() {
   const [location, setLocation] = useState ('--N/A--');
   const [temp, setTemp] = useState (0);
   const [status, setStatus] = useState ('--N/A--');
+  const [icon, setIcon] = useState ('--N/A--');
 
   const update = async (value) => {
     console.log('è cambiata la città', value);
@@ -20,6 +21,7 @@ function App() {
     const data = await response.json();
     console.log(data);
 
+    setIcon (data.weather[0].icon);
     setLocation (data.name);
     setTemp (data.main.temp);
     setStatus (data.weather[0].description);
@@ -29,7 +31,7 @@ function App() {
     <main>
       <Intro />
       <Cities notify={update}/>
-      <Weather location={location} temp={temp} status={status} />
+      <Weather icon={icon} location={location} temp={temp} status={status} />
     </main>
 
   );

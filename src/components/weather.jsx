@@ -7,6 +7,7 @@ const Weather = (props) => {
     return (
         <section className="display">
             <ul className="listWeather">
+                <img src="http://openweathermap.org/img/wn/${icon}@2x.png" alt="..." />
                 <li className="name"> Location: {location}</li>
                 <li className="temp"> Temperatura: {rounded} C°</li>
                 <li className="desc"> Condizione: {status}</li>
