@@ -1,0 +1,65 @@
+.divIntro{
+    width: auto;
+    padding: 30px;
+    background-color: #0087d5c7;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: auto;
+    box-shadow: 10px 5px 10px 0px #000000;
+    backdrop-filter: blur();
+}
+
+.title {
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.paragIntro {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.display {
+    text-align: center;
+    background-color: #0087d5c7;
+    border-radius: 10px;
+    width: 400px;
+    min-height: 400px;
+    margin: 30px auto;
+    box-shadow: 5px 5px 10px 0px #000000;
+    backdrop-filter: blur();
+    z-index: 2;
+}
+
+.name {
+    font-size: 20px;
+    padding: 50px 30px 0 30px ;
+    /* color: rgb(14, 98, 112); */
+    color: #ffffff;
+    font-weight: 300;
+}
+.temp {
+    font-size: 20px;
+    padding: 0px 30px 30px 30px ;
+    color: #ffffff;
+}
+.desc {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px 30px 10px 30px ;
+    color: #ffffff;
+}
+.selectCity {
+    display: block;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    cursor: pointer;
+}
